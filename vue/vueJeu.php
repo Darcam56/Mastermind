@@ -1,44 +1,6 @@
 <?php
 class VueJeu{
 
-  private $isHidden;
-  private $colorHidden;
-  private $colorShowed;
-  private $colorCorrect;
-  private $colorPicker;
-  private $authorizedColumn;
-
-  function __construct(){
-      $this->isHidden = true;
-      $this->colorPicker = ["bleu", "rouge", "jaune", "vert", "blanc", "orange", "violet", "fushia"];
-      $this->colorHidden = ["bleu", "rouge", "vert", "blanc"];
-      $this->colorShowed = array(
-        array("bleu","rouge","rouge","jaune"),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-      );
-      $this->colorCorrect = array(
-        array("blanc","noir","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-        array("","","",""),
-      );
-      $this->authorizedColumn = 0;
-  }
-
   function afficheJeu(){
     header("Content-type: text/html; charset=utf-8");
     ?>
